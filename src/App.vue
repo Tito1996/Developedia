@@ -19,6 +19,7 @@ import SidebarItem from './components/SidebarItem.vue'
 .header {
   width: 100%;
   height: 9rem;
+  border-bottom: 1px solid var(--vt-c-divider-dark-1);
 }
 
 .contenido {
@@ -29,18 +30,21 @@ import SidebarItem from './components/SidebarItem.vue'
 .sidebar {
   width: 100%;
   min-height: 4rem;
-  background-color: #eee;
+  padding: 1rem;
+  border-bottom: 1px solid var(--vt-c-divider-dark-1);
 }
 
 .main {
   width: 100%;
   min-height: calc(100vh - 13rem);
-  background-color: #abc;
+  padding: 1rem;
 }
 
 /* Tablet */
 @media screen and (min-width: 768px) {
-  
+  .sidebar {
+    border-right: 1px solid var(--vt-c-divider-dark-1);
+  }
 }
 
 /* Ordenador */

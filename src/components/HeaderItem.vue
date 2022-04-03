@@ -1,5 +1,7 @@
 <script setup>
     import { RouterLink } from 'vue-router';
+    import RandomTipItem from './RandomTipItem.vue'
+    import SearchItem from './SearchItem.vue'
 </script>
 
 <template>
@@ -11,6 +13,9 @@
     <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/categorias">Categorias</RouterLink>
+        <RandomTipItem />
+        <SearchItem />
     </nav>
   </div>
 </template>
@@ -33,6 +38,14 @@
 @media screen and (min-width: 768px) {
   h1 {
     font-size: 2.5rem;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 45rem;
   }
 }
 
