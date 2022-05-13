@@ -1,9 +1,12 @@
 <script setup>
+import PostItem from '../components/common/PostItem.vue';
 
 </script>
 
 <template>
   <main>
-    Hola
+    <PostItem />
   </main>
 </template>
+
+<style scoped></style>
